@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1] mb-8 tracking-tighter text-white">
-              Pare de "Adivinhar" — <br />
+              Assuma o Controle Completo <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
-                Assuma o Comando.
+                da Jornada dos Seus Alunos
               </span>
             </h1>
             
