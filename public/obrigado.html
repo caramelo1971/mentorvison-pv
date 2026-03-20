@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao MentorVision! | Compra Confirmada</title>
+    <meta name="description" content="Parabéns pela sua compra! Seu acesso ao MentorVision está garantido. Siga os passos na página para começar.">
+    <meta name="robots" content="noindex">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bem-vindo ao MentorVision! | Compra Confirmada">
+    <meta property="og:description" content="Seu acesso à plataforma de gestão inteligente para mentores está garantido.">
+    <meta property="og:image" content="https://mentorvision.vercel.app/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        :root {
+            --primary: #22d3ee;
+            --primary-dark: #0891b2;
+            --secondary: #6366f1;
+            --bg: #030617;
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background Gradients */
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(34, 211, 238, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(8, 145, 178, 0.05) 0%, transparent 50%);
+            animation: pulse-bg 15s infinite alternate;
+        }
+
+        @keyframes pulse-bg {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            animation: slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slide-up {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(34, 211, 238, 0.1);
+            border: 2px solid rgba(34, 211, 238, 0.3);
+            color: var(--primary);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2.5rem;
+            position: relative;
+            animation: bounce-icon 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce-icon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .success-icon::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background: var(--primary);
+            opacity: 0.2;
+            filter: blur(20px);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
+            background: linear-gradient(135deg, #fff 0%, #a5f3fc 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-message {
+            color: var(--text-dim);
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        .stepper {
+            text-align: left;
+            margin-bottom: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(34, 211, 238, 0.2);
+            transform: scale(1.02);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: #000;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(34, 211, 238, 0.4);
+        }
+
+        .step-content h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            color: var(--text-main);
+        }
+
+        .step-content p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 1.25rem;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #000;
+            box-shadow: 0 10px 25px rgba(34, 211, 238, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(34, 211, 238, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .footer-note {
+            margin-top: 2.5rem;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 480px) {
+            .card { padding: 2.5rem 1.5rem; }
+            h1 { font-size: 2.25rem; }
+            .btn { padding: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="success-icon">
+                <span class="material-symbols-outlined" style="font-size: 56px;">check_circle</span>
+            </div>
+            
+            <h1>Parabéns!</h1>
+            <p class="sub-message">
+                Seu acesso ao <b>MentorVision</b> está garantido. <br />
+                Siga os passos abaixo para começar a ter lucro inabalável.
+            </p>
+
+            <div class="stepper">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Verifique seu E-mail</h3>
+                        <p>Você recebeu os detalhes da transação da Kiwify. Guarde esse comprovante.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Crie sua Conta</h3>
+                        <p>Use o <b>mesmo e-mail</b> da compra para que o sistema reconheça sua assinatura automaticamente.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Configuração VIP</h3>
+                        <p>Nosso sistema criará seu workspace exclusivo em segundos após o primeiro acesso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="https://www.mentorvision.com.br/login?mode=signup" class="btn btn-primary">
+                    <span class="material-symbols-outlined">rocket_launch</span>
+                    Acessar Plataforma Agora
+                </a>
+                
+                <a href="https://api.whatsapp.com/send/?phone=5567999229144&text=Ol%C3%A1%21+Preciso+de+suporte+com+o+sistema+MentorVision.&type=phone_number&app_absent=0" target="_blank" class="btn btn-whatsapp">
+                    <span class="material-symbols-outlined">chat</span>
+                    Suporte VIP WhatsApp
+                </a>
+            </div>
+
+            <p class="footer-note">
+                Problemas com o acesso? Fale conosco pelo WhatsApp acima.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.step-item').forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-20px)';
+            setTimeout(() => {
+                item.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+                item.style.opacity = '1';
+                item.style.transform = 'translateX(0)';
+            }, 400 + (index * 150));
+        });
+    </script>
+</body>
+</html>
