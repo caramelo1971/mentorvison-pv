@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               <span className="mr-2">👁️</span> O MECANISMO OCULTO DA RETENÇÃO
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1] mb-8 tracking-tighter text-white">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 tracking-tighter text-white max-w-2xl">
               Assuma o Controle Completo <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
                 da Jornada dos Seus Alunos
@@ -46,11 +46,11 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-gray-200 text-xl md:text-2xl max-w-xl mb-8 leading-tight font-medium drop-shadow-sm">
-              Enquanto você dorme, alunos silenciosos abandonam sua mentoria. O Mentor Vision é o <span className="text-white font-bold underline decoration-cyan-500 underline-offset-4 text-2xl">Sistema de Alerta Antecipado</span> que você precisa.
+              Enquanto você dorme, alunos silenciosos abandonam a sua mentoria. O Mentor Vision é o <span className="text-white font-bold underline decoration-cyan-500 underline-offset-4 text-2xl">Sistema de Controle e Alerta</span> que você precisa.
             </p>
           </div>
 
-          <div className="order-1 lg:order-2 relative group perspective-1000">
+          <div className="order-1 lg:order-2 relative group perspective-1000 lg:translate-x-12">
             <div className="absolute -inset-10 bg-cyan-500/20 rounded-full blur-[100px] opacity-50 group-hover:opacity-80 transition-opacity duration-1000"></div>
             <div className="relative transform lg:rotate-2 lg:group-hover:rotate-0 transition-all duration-700 ease-out">
               <div className="bg-[#0f1115] rounded-t-2xl p-1.5 border-t border-x border-white/20 shadow-[0_0_50px_rgba(6,182,212,0.15)]">
