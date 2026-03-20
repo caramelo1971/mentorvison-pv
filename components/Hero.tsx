@@ -38,10 +38,11 @@ const Hero: React.FC = () => {
               <span className="mr-2">👁️</span> O MECANISMO OCULTO DA RETENÇÃO
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 tracking-tighter text-white max-w-2xl">
-              Assuma o Controle Completo <br />
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 tracking-tighter text-white max-w-4xl">
+              Assuma o Controle <br />
+              Completo da Jornada <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
-                da Jornada dos Seus Alunos
+                dos Seus Alunos
               </span>
             </h1>
             
