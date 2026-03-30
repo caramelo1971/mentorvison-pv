@@ -25,11 +25,18 @@ const Pricing: React.FC = () => {
               <h3 className="text-3xl font-black text-white mb-8">Plano Mensal Vision</h3>
               
               <div className="flex flex-col items-center mb-8">
-                <div className="text-gray-400 text-sm font-bold mb-2">Valor Total R$ 814,80</div>
                 <div className="flex items-baseline gap-1">
                   <span className="text-2xl font-bold text-gray-400">R$</span>
-                  <span className="text-8xl font-black text-white tracking-tighter">67,90</span>
-                  <span className="text-2xl font-bold text-gray-500 ml-1">/mês</span>
+                  <span className="text-7xl md:text-8xl font-black text-white tracking-tighter">814,80</span>
+                </div>
+                
+                <div className="flex flex-col items-center mt-4 space-y-2">
+                  <span className="text-gray-400/70 font-black text-sm md:text-base uppercase tracking-[0.2em]">
+                    VALOR TOTAL OU
+                  </span>
+                  <span className="text-white font-black text-3xl md:text-4xl uppercase tracking-tighter leading-tight text-center">
+                    12 X DE <span className="text-gray-400">R$ 67,90</span>
+                  </span>
                 </div>
               </div>
               
