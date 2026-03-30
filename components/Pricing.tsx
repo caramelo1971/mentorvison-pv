@@ -21,22 +21,27 @@ const Pricing: React.FC = () => {
             
             {/* Plano Mensal - O Ancorador */}
             <div className="bg-[#121418]/60 p-8 md:p-10 rounded-[2.5rem] border border-white/10 flex flex-col items-center text-center transition-all duration-500 hover:border-white/20 group order-2 md:order-1">
-              <span className="text-gray-400 text-sm font-black uppercase tracking-[0.2em] mb-6">Flexibilidade Total</span>
-              <h3 className="text-2xl font-bold text-white mb-6">Plano Mensal Vision</h3>
+              <span className="text-gray-400 text-sm font-black uppercase tracking-[0.3em] mb-6">Flexibilidade Total</span>
+              <h3 className="text-3xl font-black text-white mb-8">Plano Mensal Vision</h3>
               
-              <div className="text-gray-400 text-sm font-bold mb-2">Valor Total R$ 814,80</div>
-              <div className="flex items-baseline gap-1 mb-8">
-                <span className="text-xl font-bold text-gray-400">R$</span>
-                <span className="text-6xl font-black text-white">67,90</span>
-                <span className="text-gray-500 font-bold ml-1">/mês</span>
+              <div className="flex flex-col items-center mb-8">
+                <div className="text-gray-400 text-sm font-bold mb-2">Valor Total R$ 814,80</div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-2xl font-bold text-gray-400">R$</span>
+                  <span className="text-8xl font-black text-white tracking-tighter">67,90</span>
+                  <span className="text-2xl font-bold text-gray-500 ml-1">/mês</span>
+                </div>
               </div>
               
               <p className="text-gray-400 text-sm mb-10 leading-relaxed font-medium">
                 Ideal para quem está começando e quer testar o poder dos dados. Cancele a qualquer momento.
               </p>
 
-              <button className="w-full bg-white/5 hover:bg-white/10 text-white font-bold py-5 rounded-2xl border border-white/10 transition-all active:scale-95">
-                COMEÇAR TESTE FLEX
+              <button className="w-full bg-white/5 hover:bg-white/10 text-white font-black text-2xl py-7 rounded-[2rem] border border-white/10 transition-all transform hover:-translate-y-2 active:scale-95 group/btn">
+                <span className="flex items-center justify-center gap-3">
+                  COMEÇAR TESTE FLEX
+                  <svg className="w-6 h-6 transition-transform group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                </span>
               </button>
             </div>
 
