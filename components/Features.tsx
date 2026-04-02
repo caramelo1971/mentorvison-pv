@@ -41,8 +41,8 @@ const Features: React.FC = () => {
         <div className="text-center mb-24">
           <p className="text-cyan-400 font-black tracking-[0.4em] uppercase text-sm mb-6 animate-pulse">Tecnologia de Elite</p>
           <h2 className="text-5xl md:text-7xl font-black mb-8 text-white leading-none tracking-tighter">
-            Domine o Jogo com <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Poder Absoluto.</span>
+            Domine o jogo com <br className="hidden md:block" />
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Controle Absoluto.</span>
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto text-xl font-medium leading-relaxed">
             Seus alunos não são apenas nomes em uma lista. São ativos que precisam de monitoramento constante. Use o arsenal Mentor Vision para garantir que nenhum deles fique para trás.

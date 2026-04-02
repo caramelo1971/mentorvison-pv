@@ -76,7 +76,15 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Video Placeholder Section */}
-        <div className="relative max-w-5xl mx-auto flex flex-col items-center gap-10">
+        <div className="relative max-w-5xl mx-auto flex flex-col items-center gap-8 mt-12 md:mt-20">
+          
+          {/* Frase Chamativa piscando antes do vídeo */}
+          <div className="animate-pulse w-full text-center">
+            <p className="text-cyan-400 font-bold text-sm md:text-base md:text-lg tracking-[0.15em] uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+              Assista esse vídeo e entenda o poder que terá em suas mãos
+            </p>
+          </div>
+
           <div className="w-full relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
             
