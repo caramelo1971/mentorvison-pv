@@ -20,34 +20,40 @@ const Pricing: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             
             {/* Plano Mensal - O Ancorador */}
-            <div className="bg-[#121418]/60 p-8 md:p-10 rounded-[2.5rem] border border-white/10 flex flex-col items-center text-center transition-all duration-500 hover:border-white/20 group order-2 md:order-1">
-              <span className="text-gray-400 text-sm font-black uppercase tracking-[0.3em] mb-6">Flexibilidade Total</span>
-              <h3 className="text-3xl font-black text-white mb-8">Plano Mensal Vision</h3>
+            <div className="bg-[#121418]/40 p-8 md:p-10 rounded-[2.5rem] border border-white/5 flex flex-col items-center text-center transition-all duration-500 hover:border-white/10 group order-2 md:order-1">
+              <span className="text-gray-500 text-xs font-bold uppercase tracking-[0.3em] mb-6">Flexibilidade Total</span>
+              <h3 className="text-3xl font-bold text-gray-300 mb-8">Plano Mensal Vision</h3>
               
-              <div className="flex flex-col items-center mb-8">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-2xl font-bold text-gray-400">R$</span>
-                  <span className="text-7xl md:text-8xl font-black text-white tracking-tighter">814,80</span>
+              <div className="flex flex-col items-center mb-6">
+                <div className="flex items-baseline gap-1 opacity-80">
+                  <span className="text-2xl font-bold text-gray-500">R$</span>
+                  <span className="text-6xl md:text-7xl font-bold text-gray-400 tracking-tighter">814,80</span>
                 </div>
                 
                 <div className="flex flex-col items-center mt-4 space-y-2">
-                  <span className="text-gray-400/70 font-black text-sm md:text-base uppercase tracking-[0.2em]">
+                  <span className="text-gray-600 font-bold text-xs md:text-sm uppercase tracking-[0.2em]">
                     VALOR TOTAL OU
                   </span>
-                  <span className="text-white font-black text-3xl md:text-4xl uppercase tracking-tighter leading-tight text-center">
-                    12 X DE <span className="text-gray-400">R$ 67,90</span>
+                  <span className="text-gray-400 font-bold text-2xl md:text-3xl uppercase tracking-tighter leading-tight text-center">
+                    12 X DE <span className="text-gray-500">R$ 67,90</span>
                   </span>
                 </div>
               </div>
               
-              <p className="text-gray-400 text-sm mb-10 leading-relaxed font-medium">
-                Ideal para quem está começando e quer testar o poder dos dados. Cancele a qualquer momento.
+              <div className="bg-red-500/5 px-4 py-3 rounded-xl border border-red-500/10 mb-8 w-full">
+                <p className="text-red-400/80 text-sm font-bold tracking-wide">
+                  ⚠️ Pague R$ 244,80 a mais em 1 ano
+                </p>
+              </div>
+
+              <p className="text-gray-500 text-sm mb-10 leading-relaxed">
+                Ideal para testar. Cancele a qualquer momento.
               </p>
 
-              <button className="w-full bg-white/5 hover:bg-white/10 text-white font-black text-2xl py-7 rounded-[2rem] border border-white/10 transition-all transform hover:-translate-y-2 active:scale-95 group/btn">
+              <button className="w-full bg-transparent hover:bg-white/5 text-gray-400 hover:text-gray-200 font-bold text-lg py-6 rounded-[2rem] border border-white/10 transition-all group/btn">
                 <span className="flex items-center justify-center gap-3">
                   COMEÇAR TESTE FLEX
-                  <svg className="w-6 h-6 transition-transform group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                  <svg className="w-5 h-5 transition-transform group-hover/btn:translate-x-2 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </span>
               </button>
             </div>
