@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
           
           {/* Frase Chamativa piscando antes do vídeo */}
           <div className="animate-pulse w-full text-center mb-2">
-            <p className="text-red-500 font-black text-lg md:text-2xl lg:text-3xl tracking-widest uppercase drop-shadow-[0_0_15px_rgba(239,68,68,0.7)]">
+            <p className="text-red-500 font-black text-base md:text-xl lg:text-2xl tracking-widest uppercase drop-shadow-[0_0_15px_rgba(239,68,68,0.7)]">
               Assista esse vídeo e entenda o poder que terá em suas mãos
             </p>
           </div>
