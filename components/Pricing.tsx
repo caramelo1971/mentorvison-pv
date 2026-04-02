@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
               
               <div className="bg-red-500/5 px-4 py-3 rounded-xl border border-red-500/10 mb-8 w-full">
                 <p className="text-red-400/80 text-sm font-bold tracking-wide">
-                  ⚠️ Pague R$ 244,80 a mais em 1 ano
+                  ⚠️ Pague R$ 354,80 a mais em 1 ano
                 </p>
               </div>
 
@@ -67,7 +67,7 @@ const Pricing: React.FC = () => {
                 
                 {/* Badge de Seleção */}
                 <div className="absolute -top-6 bg-cyan-500 text-black font-black px-10 py-2.5 rounded-full text-sm uppercase tracking-[0.2em] shadow-[0_10px_30px_rgba(34,211,238,0.5)]">
-                  MELHOR ESCOLHA - ECONOMIZE R$ 244
+                  MELHOR ESCOLHA - ECONOMIZE R$ 354,80
                 </div>
 
                 <span className="text-cyan-400 text-sm font-black uppercase tracking-[0.3em] mb-6">Domínio Inabalável</span>
@@ -76,7 +76,7 @@ const Pricing: React.FC = () => {
                 <div className="flex flex-col items-center mb-8">
                   <div className="flex items-baseline gap-1">
                     <span className="text-2xl font-bold text-cyan-400">R$</span>
-                    <span className="text-8xl font-black text-white tracking-tighter drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">570</span>
+                    <span className="text-8xl font-black text-white tracking-tighter drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">460</span>
                   </div>
                   
                   {/* Divisão em duas linhas com destaque em vermelho conforme solicitado */}
@@ -85,14 +85,14 @@ const Pricing: React.FC = () => {
                       À VISTA NO PIX OU
                     </span>
                     <span className="text-white font-black text-3xl md:text-4xl uppercase tracking-tighter leading-tight">
-                      EM 12 X DE <span className="text-red-500 drop-shadow-[0_0_12px_rgba(239,68,68,0.6)] animate-pulse">R$ 47,50</span>
+                      EM 12 X DE <span className="text-red-500 drop-shadow-[0_0_12px_rgba(239,68,68,0.6)] animate-pulse">R$ 47,58</span>
                     </span>
                   </div>
                 </div>
 
                 <div className="bg-cyan-500/10 px-6 py-3 rounded-full border border-cyan-500/30 mb-10">
                   <p className="text-cyan-400 font-bold text-sm tracking-wide">
-                    🔥 Menos de <span className="text-white text-lg">R$ 1,60</span> por dia de inteligência.
+                    🔥 Menos de <span className="text-white text-lg">R$ 1,30</span> por dia de inteligência.
                   </p>
                 </div>
 
