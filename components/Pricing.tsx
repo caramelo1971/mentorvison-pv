@@ -96,7 +96,7 @@ const Pricing: React.FC = () => {
                   </p>
                 </div>
 
-                <a href="https://pay.kiwify.com.br/fO6F9eX" target="_blank" rel="noopener noreferrer" className="block w-full bg-cyan-500 hover:bg-cyan-400 text-black font-black text-2xl py-7 rounded-[2rem] transition-all shadow-[0_15px_40px_rgba(34,211,238,0.3)] transform hover:-translate-y-2 active:scale-95 group/btn">
+                <a href="https://pay.kiwify.com.br/XoU5Hlk" target="_blank" rel="noopener noreferrer" className="block w-full bg-cyan-500 hover:bg-cyan-400 text-black font-black text-2xl py-7 rounded-[2rem] transition-all shadow-[0_15px_40px_rgba(34,211,238,0.3)] transform hover:-translate-y-2 active:scale-95 group/btn">
                   <span className="flex items-center justify-center gap-3">
                     GARANTIR MEU ACESSO ELITE
                     <svg className="w-6 h-6 transition-transform group-hover/btn:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
