@@ -79,8 +79,8 @@ const Hero: React.FC = () => {
         <div className="relative max-w-5xl mx-auto flex flex-col items-center gap-8 mt-12 md:mt-20">
           
           {/* Frase Chamativa piscando antes do vídeo */}
-          <div className="animate-pulse w-full text-center">
-            <p className="text-cyan-400 font-bold text-sm md:text-base md:text-lg tracking-[0.15em] uppercase drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+          <div className="animate-pulse w-full text-center mb-2">
+            <p className="text-red-500 font-black text-lg md:text-2xl lg:text-3xl tracking-widest uppercase drop-shadow-[0_0_15px_rgba(239,68,68,0.7)]">
               Assista esse vídeo e entenda o poder que terá em suas mãos
             </p>
           </div>
